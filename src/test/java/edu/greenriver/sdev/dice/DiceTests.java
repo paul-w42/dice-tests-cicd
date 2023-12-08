@@ -23,5 +23,11 @@ public class DiceTests {
         assertTrue(d.getSides() == 6);
     }
 
+    @Test
+    void colorWhite() {
+        Dice d = new Dice(6, "white");
+        assertTrue(d.getColor().equals("white"));
+    }
+
 
 }
