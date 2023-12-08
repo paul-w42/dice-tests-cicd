@@ -16,7 +16,7 @@ public class DiceTests {
             assertTrue(num > 0 && num < 7);
         }
     }
- 
+
     @Test
     void sidesEqualsSix() {
         Dice d = new Dice(6, "white");
