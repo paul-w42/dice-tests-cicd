@@ -45,8 +45,9 @@ public class DiceTests {
     @Test
     void testRollMany() {
         int[] rolls = d.rollMany(50);
-        for (int i: rolls) {
-            assertTrue(i > 0 && i < 7);
+
+        for (int i = 1; i <= 50; i++) {
+            assertTrue(rolls[i] > 0 && rolls[i] < 7);
         }
     }
 

@@ -28,7 +28,7 @@ public class Dice
 
     public int[] rollMany(int times)
     {
-        int[] rollsHistory = new int[times];
+        int[] rollsHistory = new int[times+1];
         for (int i = 1; i <= times; i++)
         {
             rollsHistory[i] = roll();
