@@ -42,5 +42,13 @@ public class DiceTests {
         assertEquals(6, d.getSides());
     }
 
+    @Test
+    void testRollMany() {
+        int[] rolls = d.rollMany(50);
+        for (int i: rolls) {
+            assertTrue(i > 0 && i < 7);
+        }
+    }
+
 
 }
