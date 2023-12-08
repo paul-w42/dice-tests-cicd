@@ -26,7 +26,7 @@ public class DiceTests {
     @Test
     void colorWhite() {
         Dice d = new Dice(6, "white");
-        assertTrue(d.getColor().equals("blue"));
+        assertTrue(d.getColor().equals("white"));
     }
 
 
